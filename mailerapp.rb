@@ -3,7 +3,7 @@ require 'pony'
 
 
 get "/" do
-  "It works!"
+  erb :contact
 end
 
 post '/contact' do
