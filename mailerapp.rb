@@ -23,7 +23,7 @@ post '/contact' do
       domain:                "heroku.com"
     }
   })
-  redirect to "/?email_sent=true"
+  "message received"
 end
 
 private
