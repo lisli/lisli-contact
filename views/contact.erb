@@ -1,10 +1,11 @@
 <% if params["email_sent"] %>
   <p>Thanks! I'll get back to you soon.</p>
 <% end %>
-<form action="http://lisli-contact.herokuapp.com/contact" method="post">
+<form action="/contact" method="post">
   Name: <input type="text" name="name"><br>
   Email: <input type="text" name="email"><br>
   Subject: <input type="text" name="subject">
   <textarea rows="4" cols="50" name="body"></textarea>
+  Spambot:<input id="website" name="website" type="text" value=""  />
   <input type="submit" value="Send email"/>
 </form>
